@@ -1,0 +1,94 @@
+/*AJUSTES PRIMARIOS*/
+
+body{
+    background-color:#c1def1;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+h1{
+    color: #18bac0;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2{
+  text-align: center;
+  color: #092c3f;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h3{
+  text-align: center;
+  color: #092c3f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+
+/*ESTILOS BASE*/
+
+.header{
+    background-color: #18bac0;
+    align-items: center;
+    padding-bottom: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+
+
+}
+
+
+.panel-footer {
+    color: #18bac0;
+    padding: 15px 25px;
+    background-color: #000000;
+    
+  }
+
+.div-footer {
+    text-align: right;
+}
+
+/*INDEX*/
+
+
+.wrapper {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  .izquierda{
+    border-radius: 5px;
+    grid-column: 1/ 2;
+    grid-row: 1;
+  }
+
+  .derecha{
+    border-radius: 5px;
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }
+
+  .separador{
+    align-items: center;
+    justify-content: center;
+    color: #18bac0;
+    font-style: italic;
+    font-size: larger;
+    border-style: solid;
+    border-width: 2px;
+    width:9em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+.video{
+  align-items: center;
+  margin: auto;
+}
