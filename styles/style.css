@@ -1,6 +1,7 @@
 /*AJUSTES PRIMARIOS*/
 
 body{
+  margin-top: 23px;
     background-color:#c1def1;
     padding-bottom: 60px;
     padding-top: 60px;
@@ -91,4 +92,7 @@ h3{
 .video{
   align-items: center;
   margin: auto;
+}
+.banner{
+  justify-content: space-evenly;
 }
