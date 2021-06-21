@@ -17,9 +17,9 @@ function mostrar(id) {
 
     let tipo = localStorage.getItem("tipo")
     if (tipo == "back")
-        {var pelId = backDB[id], data = backDB} 
+        {var pelId = backDB[id]} 
     else if(tipo == "front") {
-        var pelId = frontDB[id], data = frontDB;
+        var pelId = frontDB[id];
     } else {
         window.location.href = "producto.html";
         alert ("ingrese un articulo por favor");
@@ -52,7 +52,7 @@ function mostrar(id) {
     valoracion.innerHTML +=`
     <li class="liR">R</li>
     <li class="minDetalle" style="margin-left: 15px;margin-right: 8px;">${pelId.valoracion}</li>
-    <li class="liHD"><img  src="./imagenes/HD.png" alt=""></li>
+    
     `
     instructor.innerHTML +=`
     <p>${pelId.instructor}</p>
