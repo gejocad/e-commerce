@@ -9,17 +9,16 @@ function mostrar(id) {
 
     let imagen = document.querySelector(".imagen")
     let nombre = document.querySelector(".nombre")
-    let coincidencia = document.querySelector(".coincidencia")
-    let año = document.querySelector(".año")
-    let duracion = document.querySelector(".duracion")
+    let categoria = document.querySelector(".categoria")
+    let precio = document.querySelector(".precio")
     let descripcion = document.querySelector(".descripcion")
-    let elenco = document.querySelector(".elenco")
-    let director = document.querySelector(".director")
+    let valoracion = document.querySelector(".valoracion")
+    let instructor = document.querySelector(".instructor")
 
-    let categoria = localStorage.getItem("categoria")
-    if (categoria == "back")
+    let tipo = localStorage.getItem("tipo")
+    if (tipo == "back")
         {var pelId = backDB[id], data = backDB} 
-    else if(categoria == "front") {
+    else if(tipo == "front") {
         var pelId = frontDB[id], data = frontDB;
     } else {
         window.location.href = "producto.html";
@@ -28,12 +27,11 @@ function mostrar(id) {
 
     imagen.innerHTML = ''
     nombre.innerHTML = ''
-    coincidencia.innerHTML = ''
-    año.innerHTML = ''
-    duracion.innerHTML = ''
+    categoria.innerHTML = ''
+    precio.innerHTML = ''
     descripcion.innerHTML = ''
-    elenco.innerHTML = ''
-    director.innerHTML = ''
+    valoracion.innerHTML = ''
+    instructor.innerHTML = ''
 
     imagen.innerHTML +=`
         <img id="img-detalle" src="${pelId.imagen}">
@@ -41,24 +39,22 @@ function mostrar(id) {
     nombre.innerHTML +=`
         <h1 id="titulo" class="">${pelId.nombre}</h1>
     `
-    coincidencia.innerHTML +=`
-        <li id="coincidencia" class="minDetalle" class="">${pelId.coincidencia}</li>
+    categoria.innerHTML +=`
+        <li id="coincidencia" class="minDetalle" class="">${pelId.categoria}</li>
     `
-    año.innerHTML +=`
-    <li class="minDetalle" style="margin-right: 8px;margin-left: 30px;">${pelId.año}</li>
+    precio.innerHTML +=`
+    <li class="minDetalle" style="margin-right: 8px;margin-left: 30px;">${pelId.precio}</li>
     `
-    duracion.innerHTML +=`
-    <li class="liR">R</li>
-    <li class="minDetalle" style="margin-left: 15px;margin-right: 8px;">${pelId.duracion}</li>
-    <li class="liHD"><img  src="./imagenes/HD.png" alt=""></li>
-    `
+    
     descripcion.innerHTML +=`
     <div class="descripcion">${pelId.descripcion}</div>
     `
-    elenco.innerHTML +=`
-    <p>${pelId.elenco}</p>
+    valoracion.innerHTML +=`
+    <li class="liR">R</li>
+    <li class="minDetalle" style="margin-left: 15px;margin-right: 8px;">${pelId.valoracion}</li>
+    <li class="liHD"><img  src="./imagenes/HD.png" alt=""></li>
     `
-    director.innerHTML +=`
-    <p>${pelId.director}</p>
+    instructor.innerHTML +=`
+    <p>${pelId.instructor}</p>
     `
 }

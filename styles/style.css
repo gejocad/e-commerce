@@ -94,3 +94,25 @@ h3{
 .banner{
   justify-content: space-evenly;
 }
+
+.addToCart{
+  align-items: center;
+  width: 100px;
+  height: 40px;
+}
+
+.precio{
+  justify-content: left;
+}
+
+.addToCart{
+  margin-left: 15px;
+  transform: translateY(-50px);
+}
+.shopping-cart-image{
+  width: 25px;
+}
+
+.shoppingCartItemQuantity{
+  width: 50px;
+}

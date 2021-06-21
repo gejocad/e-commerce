@@ -31,9 +31,9 @@
     </nav>
   </header>
   <main>
-    <div class="tab-pane fade show active">
-      <div class="container-fluid mt-4 mb-3">
-        <div class="row row-cols-2 row-cols-md-2 g-4 listDev">
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 listDev">
         </div>
       </div>
     </div>
@@ -41,46 +41,21 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
-              <div class="row align-items-center ">
-                  <div class="col mt-5">
-                      <img src="./images/carrito-person.png" alt="">
-                  </div>
-                  <div class="col mt-5">
-                      <h5>Crown Sweatshirt</h5>
-                      <h6>S $85.00</h6>
-                  </div>
-                  <div class="col text-center mt-5">
-                      <p id="amount" class="mt-3">1<img class="img-fluid" src="./images/Line.png" alt="">
-                          <span id="remove">Remove</span>
-                      </p>
-                  </div>
+              <div class="">
+                
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
               </div>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <div class="container px-4 pt-5 pb-5">
-                  <div class="row gx-5">
-                      <div class="col">
-                          <p class="text-start flex-row-reverse">Subtotal</p>
-                      </div>
-                      <div class="col">
-                          <p id="valor" class="text-end">$85.00</p>
-                      </div>
-                  </div>
+              <div class="shopping-cart-items shoppingCartItemsContainer">
+                  
               </div>
-              <p class="text-center" style="font-size: 12px; line-height: 24px;">Shipping, taxes, and discount
-                  codes
-                  calculated at checkout.</p>
-              <!--Boton Check-Out/OffCanvas-->
-              <div class="d-grid gap-2">
-                  <button id="check-out" class="btn btn-primary" type="button">CHECK OUT</button>
-              </div>
-              <div class="container text-center">
-                  <p class="fw-bold mt-5" style="font-size: 15px;">Please Note: All items are pre-order and
-                      will ship
-                      in 6-10 weeks. Guaranteed
-                      holiday delivery.</p>
+              
+              <div class="shopping-cart-total d-grid gap-2">
+              <p class="mb-0">Total</p>
+              <p class="ml-4 mb-0 shoppingCartTotal"></p>
+                  <button id="check-out" class="btn btn-primary  comprarButton" type="button">Comprar</button>
               </div>
           </div>
       </div>
